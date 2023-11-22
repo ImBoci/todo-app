@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: url("/img/bg.jpg");
+}
+
+footer p {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.inside-container {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  max-height: 90%;
+  padding: 2rem;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  background: rgba(139, 124, 106, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  border: 2px solid rgba(255, 228, 196, 0.78);
+}
+
+.inside-container h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.selection {
+  margin-top: 5rem;
+}
+
+.selection ul {
+  display: flex;
+}
+
+.selectable-item {
+  list-style-type: none;
+  margin: 1rem 1.6rem;
+  font-size: 3rem;
+}
+
+.selectable-item a {
+  text-decoration: none;
+  color: rgb(157, 255, 65);
+  transition: color 0.6s;
+}
+
+.selectable-item a:hover {
+  color: rgb(52, 80, 26);
+  text-decoration: underline;
+}
